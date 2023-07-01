@@ -1,3 +1,7 @@
+# 改変した部分
+- 出力の最後に無駄な半角スペースがあってもテストが通るようにした。
+
+
 [![Build Status](https://api.travis-ci.org/kyuridenamida/atcoder-tools.svg?branch=stable)](https://travis-ci.org/kyuridenamida/atcoder-tools)
 [![codecov](https://codecov.io/gh/kyuridenamida/atcoder-tools/branch/master/graph/badge.svg)](https://codecov.io/gh/kyuridenamida/atcoder-tools)
 [![PyPI](https://img.shields.io/pypi/v/atcoder-tools.svg)](https://pypi.python.org/pypi/atcoder-tools)
