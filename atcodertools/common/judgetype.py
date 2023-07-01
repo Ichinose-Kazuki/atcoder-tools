@@ -37,8 +37,15 @@ class NormalJudge(Judge):
     def __init__(self):
         self.judge_type = JudgeType.Normal
 
+    def _extract(self, string):
+        string = [s for s in string.split('\n') if s != '']
+        for i in range(len(string)):
+            string[i] = [s for s in string[i].split(' ') if s != '']
+        return string
+
     def verify(self, output, expected):
-        return output == expected
+        # return output == expected
+        return self._extract(output) == self._extract(expected)
 
     def to_dict(self):
         return {
